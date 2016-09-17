@@ -10,4 +10,6 @@ Thank you for your visit.
 
 
 A few quick notes about what I've user in coding this page:
-(to be completed)
+rspec-rails
+capybara
+factory_girl_rails
