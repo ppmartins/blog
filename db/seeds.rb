@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+1.times do
+  User.create!(
+    email: 'fake@email.com',
+    password: 'fakepassword'
+    )
+end
+users = User.all
+puts "User created: #{User.count}"

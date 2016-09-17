@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  get 'about' => 'welcome#about'
+  get 'portfolio' => 'welcome#portfolio'
+  get 'blog' => 'welcome#blog'
+  root 'welcome#index'
+
+  devise_for :users, only: [:create]
+
+  devise_scope :user do
+           get "/admin" => "devise/sessions#create"
+         end
+
+  resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
