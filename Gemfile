@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'capybara'
 gem 'simple_form'
 gem "paperclip", "~> 5.0.0"
+gem 'devise'
 
 
 group :production do
