@@ -1,3 +1,5 @@
 <%= link_to (image_tag @post.image.url(:medium), class:'img-responsive'), post_path(@post) %>
 <%= @post.title %>
 <%= @post.body %>
+<%= link_to "Edit Post", edit_post_path %>
+<%= link_to "Delete Post", post_path %>

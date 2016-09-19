@@ -1,0 +1,6 @@
+<%= simple_form_for @post do |f| %>
+  <%= f.input :image %>
+  <%= f.input :title, placeholder: 'Add a Post Title' %>
+  <%= f.input :body, placeholder: 'Add a Post Body' %>
+  <%= f.button :submit, 'Create Post' %>
+<% end %>
